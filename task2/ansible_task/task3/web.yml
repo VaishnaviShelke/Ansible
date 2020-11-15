@@ -1,4 +1,0 @@
-- name: creating aws instance 
-  hosts: localhost
-  roles:
-    - role: create_instances
