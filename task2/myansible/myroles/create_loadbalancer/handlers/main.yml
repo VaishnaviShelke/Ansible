@@ -1,0 +1,6 @@
+---
+# handlers file for create_loadbalancer
+- name: Restarting the loadbalancer (HAProxy)
+  service:
+    name: "haproxy"
+    state: restarted

@@ -1,0 +1,8 @@
+---
+# vars file for create_instances
+access: "AWS ACCESS KEY HERE !"
+secret: "AWS SECRET KEY HERE!!"
+subnet : "subnet-xyz"
+sg: "sg-xyz"
+key: "myoskey"
+

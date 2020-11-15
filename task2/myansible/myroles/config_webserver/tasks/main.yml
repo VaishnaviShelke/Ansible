@@ -1,0 +1,18 @@
+---
+# tasks file for config_webserver
+- name: Installing Apache Web Server (httpd)
+  package:
+    name: httpd
+    state: present
+
+- name: Copying webpage
+  copy:
+    content: "<h1>ANSIBLE-TASK-3</h1>\nThis is {{ ansible_hostname }}"
+    dest: "/var/www/html/index.html"
+    mode: 644
+
+- name: Enabling and starting the web server
+  service:
+    name: "httpd"
+    state: started
+    enabled: yes
