@@ -1,7 +1,0 @@
-- hosts: tag_Name_webserver
-  roles:
-    - role: config_webserver
-
-- hosts: tag_Name_loadbalancer
-  roles:
-    - role: create_loadbalancer
