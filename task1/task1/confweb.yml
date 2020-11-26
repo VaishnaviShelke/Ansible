@@ -39,14 +39,14 @@
 
     - name: Creating directory
       file:
-        path: /myweb                      #folder name
+        path: /myweb                      
         state: directory
 
 
     - name: copying files
       copy:
-        src: "home.html"                  #folder me html page
-        dest: "/myweb/"                     #folder name
+        src: "home.html"                  
+        dest: "/myweb/"                     
 
 
     - name: Create a httpd container
